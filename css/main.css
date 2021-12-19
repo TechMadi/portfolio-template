@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&display=swap');
+*{
+    --grey:#161616;
+    --red:#C01825;
+    --brownRed: #A03333;
+    --lightGrey: #1E1E1E; 
+    --whiteGrey:#181818;
+    --white:#ffffff;
+   color:var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin:1rem 2rem;
+    background-color: var(--grey);
+}
+.navbar-nav .nav-item .nav-link{
+    color: var(--white) !important;
+    text-transform:uppercase !important;
+    font-weight:500 ;
+}
+.navbar-nav .nav-item .active,
+.navbar-nav .nav-item .nav-link:hover
+{
+    color:var(--red) !important;
+  transition: ease-in color 3ms ;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-dark .navbar-toggler-icon{
+    background-image:  url('../icons/ham.svg');
+     
+   
+}
+section{
+    margin:2rem 0rem ;
+}
+
+/* home */
+#home{
+    margin-top: 10rem;
+}
+.profile{
+   width: 20rem;
+   height:20rem;
+   border-radius:100%;
+   background-image: url('../images/4692027\ \(1\).jpg');
+   background-size: cover;
+   background-position: top;
+}
+.about h2{
+ font-size:medium;
+ color: var(--red) !important;
+ font: normal normal bold 21px/31px Poppins;
+ margin-bottom:12px;
+}
+.about h4{
+    font: normal normal medium 28px/42px Poppins;
+    margin-bottom:12px;
+}
+.about p{
+    font: normal normal 300 20px/30px Poppins;
+    opacity: 0.53;
+}
+
+.btn-danger{
+    background-color: var(--red) !important;
+    border-radius:0rem ;
+    border-color: var(--red) !important;
+}
+
+
+/* projects */
+
+.project-bg{
+   background:var(--whiteGrey);
+   width:40rem;
+   height:30rem;
+   position:absolute;
+   left: 0px;
+
+}
+.projects-card{
+    position:absolute;
+    left:15rem;
+}
+.card{
+    background: var(--lightGrey);
+}
+.card .icon{
+     width:2.5rem;
+     height:2.5rem;
+     margin:1rem 0rem;
+}
+.card-title p{
+    font: normal normal 600 25px/38px Poppins;
+}
+.card-actions{
+    display: flex;
+
+
+}
+.card-actions span img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto  0.5rem;
+}
+.card-actions a span{
+    text-transform: uppercase;
+    font: normal normal 800 10px/16px Poppins !important;
+    color: var(--brownRed);
+  
+}
+.btn-link{
+    text-decoration: none !important;
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        margin:1rem 0.5rem;
+    }
+    #home{
+        margin-top:5rem;
+        text-align:center;
+    }
+    .profile{
+        width: 10rem;
+        height:10rem;
+        margin:auto ;
+        margin-bottom:2rem;   
+    }
+    
+    
+  }
