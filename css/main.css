@@ -33,7 +33,7 @@ body {
   background-image: url("../icons/ham.svg");
 }
 section {
-  margin: 2rem 0rem;
+  margin: 4rem 0rem;
 }
 
 /* home */
@@ -74,8 +74,8 @@ section {
 .project-bg {
   background: var(--whiteGrey);
   width: 40rem;
-  height: 30rem;
-  position: absolute;
+  height: 35rem;
+  position: relative;
   left: 0px;
 }
 .projects-card {
@@ -86,18 +86,27 @@ section {
 .card {
   background: var(--lightGrey);
 }
-.card .icon,
-.photo img {
+.card:hover {
+  color: var(--white);
+  background: var(--red);
+}
+.card .icon {
   width: 2.5rem;
   height: 2.5rem;
   margin: 1rem 0rem;
 }
+.photo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .card-title p {
   font: normal normal 600 25px/38px Poppins;
 }
 .card-actions {
   display: flex;
 }
+
 .card-actions span img {
   width: 1.5rem;
   height: 1.5rem;
@@ -111,6 +120,12 @@ section {
 .btn-link {
   text-decoration: none !important;
 }
+.card-actions a span:hover {
+  color: var(--white);
+}
+.expe {
+  margin: auto 0rem;
+}
 
 .expe-number {
   font: normal normal 600 60px/90px Poppins;
@@ -119,6 +134,62 @@ section {
 }
 .expe-text {
   font: normal normal 600 20px/30px Poppins;
+  text-align: center;
+}
+
+.services {
+  background-color: var(--lightGrey);
+  text-align: center;
+  margin: 0.2rem;
+}
+
+.service-number {
+  font: normal normal 600 25px/38px Poppins;
+  color: var(--brownRed);
+}
+.service-type {
+  font: normal normal 600 15px/23px Poppins;
+  opacity: 0.53;
+}
+
+/*  featured projects */
+.section-title h4 {
+  text-transform: uppercase;
+  font: normal normal bold 28px/42px Poppins;
+}
+.section-title p {
+  opacity: 0.53;
+}
+
+.project-img {
+  background: var(--lightGrey);
+}
+.project-img img {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+.curr-project {
+  text-align: center;
+}
+.curr-project-title {
+  font: normal normal bold 28px/42px Poppins;
+  color: var(--brownRed);
+}
+
+.contact-details {
+  margin: 0rem auto;
+  background: var(--lightGrey);
+  padding: 1rem;
+}
+.contact-text h4 {
+  font: normal normal 500 25px/38px Poppins;
+}
+.contact-text p {
+  opacity: 0.53;
+}
+.contact-button {
+  margin: auto 0;
   text-align: center;
 }
 
@@ -139,5 +210,14 @@ section {
   }
   .card {
     margin-bottom: 2rem;
+  }
+  .project-bg {
+    display: none;
+  }
+  .projects-card {
+    position: inherit;
+  }
+  .card-title p {
+    font: normal normal 600 20px/33px Poppins;
   }
 }
