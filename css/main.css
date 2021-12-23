@@ -103,10 +103,9 @@ section {
 .card-title p {
   font: normal normal 600 25px/38px Poppins;
 }
-.card-actions {
+.card-actions a {
   display: flex;
 }
-
 .card-actions span img {
   width: 1.5rem;
   height: 1.5rem;
@@ -116,6 +115,7 @@ section {
   text-transform: uppercase;
   font: normal normal 800 10px/16px Poppins !important;
   color: var(--brownRed);
+  margin: auto 0rem;
 }
 .btn-link {
   text-decoration: none !important;
